@@ -1,16 +1,53 @@
-const increment = document.getElementById("pos");
-const decerment = document.getElementById("neg");
-const price = document.getElementById("rupp");
+const increment = document.querySelectorAll(".positive");
+const decrement = document.querySelectorAll(".negetive");
+const count = document.querySelector(".count");
 
+function incre(i, a){
+    a++;
+    a = (a<10) ? "0" + a : a;
+    console.log(count[i]);
+};
 
-increment.addEventListener("click", ()=>{
-    document.getElementById("num").innerText++;
-    price.innerHTML = `₹ {document.getElementById("num").innerText)*1399}`;
-})
+for(var i=0;i<increment.length;i++){
+    let a=1;
+    const button = increment[i];
+    button.addEventListener('click', incre(i, a));
+}
 
-decerment.addEventListener("click", ()=>{
-    document.getElementById("num").innerText--;
-})
+console.log(increment);
+console.log(decrement);
+
+// for(var i=0;i<increment.length;i++){
+//     var button = increment[i];
+//     button.addEventListener('click', (event)=>{
+//         var buttonClicked = event.target;
+//         // console.log(buttonClicked);
+//         var input = buttonClicked.parentElement.children[2];
+//         console.log(input);
+
+//     })
+// }
+
+// increment.forEach(()=>{
+//     addEventListener("click", ()=>{
+//         document.getElementById("num").innerText++;
+//         num++;
+//     })
+// })
+
+// var num = document.querySelectorAll(".count").innerText;
+
+// increment.addEventListener("click", ()=>{
+//     document.querySelectorAll(".count").innerText++;
+//     num++
+//     console.log(num);
+// })
+
+// decerment.addEventListener("click", ()=>{
+//     document.querySelectorAll(".count").innerText--;
+//     num--;
+//     console.log(num);
+// })
 
 
 

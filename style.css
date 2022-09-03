@@ -52,7 +52,6 @@ nav{
 
 .grid{
     display: flex;
-    flex: wrap;
     margin-top: 2rem;
 }
 
@@ -117,7 +116,7 @@ p.delivery_details span {
     align-items: baseline;
 }
 
-.count{
+.input-filed{
     font-size: 20px;
     font-weight: 600;
     padding: 5px 10px;
@@ -232,4 +231,22 @@ p.delivery_details span {
 
 .btn button:hover{
     color: white;
+}
+
+@media only screen and (max-width: 1100px) {
+    .grid{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    .col_container{
+        margin-top: 2.5rem;
+        width: 100%;
+    }
+
+    .head {
+        width: 100%;
+    }
+    
 }
