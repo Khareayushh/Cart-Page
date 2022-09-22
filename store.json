@@ -1,0 +1,20 @@
+{
+    "items" : [
+      {
+          "id": "1",
+          "image": "./Assets/Boat1.webp",
+          "title": "boAt Rockerz 333",
+          "make": "Boat",
+          "quantity": 1,
+          "price": 1399
+      },
+      {
+        "id": "2",
+        "image": "./Assets/main_blue_a80b6882-1247-439d-a17b-1c87ed4fa7c8.webp",
+        "title": "boAt Airdopes 161",
+        "make": "Boat",
+        "quantity": 35,
+        "price": 1199
+      }
+    ]
+}
